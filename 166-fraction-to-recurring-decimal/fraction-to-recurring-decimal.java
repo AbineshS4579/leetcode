@@ -1,8 +1,6 @@
 // class Solution {
 //     public String fractionToDecimal(int numerator, int denominator) {
-//         int j=1;
-//         if(numerator<0&&denominator<0)j=1;
-//         else if(numerator<0||denominator<0) j=-1;
+//         boolean negative = (numerator < 0) ^ (denominator < 0);
 //        int n=Math.abs(numerator/denominator);
 //        long l=numerator%denominator;
 //        List<Long> L=new ArrayList<>();
