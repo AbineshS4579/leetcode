@@ -1,3 +1,14 @@
+// class Solution {
+//     public int getCommon(int[] nums1, int[] nums2) {
+//         Arrays.sort(nums2);
+//         Arrays.sort(nums1);
+//         List<Integer> l=Arrays.stream(nums2).boxed().toList();
+//         for(int i:nums1){
+//             if(l.contains(i))return i;
+//         }
+//         return -1;
+//     }
+// }
 class Solution {
     public int getCommon(int[] nums1, int[] nums2) {
         Arrays.sort(nums2);
