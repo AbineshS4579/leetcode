@@ -5,30 +5,18 @@
 //             l.add(i);
 //         }
 //         Collections.sort(l);
-//         int k=l.size()-1;
-//         if(l.get(0)==l.get(k)){
-//             return 0;
-//         }
-//         int count=0;
-//         boolean t=true;
-//         while(t){
-//         if(l.get(0)==l.get(k)){
-//             t=false;
-//         }
+//         int count= 1;
+//         while(l.get(0)!=l.get(l.size()-1)){
+//             int k=l.size()-1;
 //         while(k>0&&l.get(k)==l.get(k-1)){
-//             k=k-1;
+//             k--;
 //         }
 //         if(k>1){
-//             l.add(l.get(k-1)+1);
-//             l.add(l.get(k-2)+1);
-//             l.remove(k-2);
-//             l.remove(k-1);
+//             l.set(k-1,l.get(k-1)+1);
+//             l.set(k-2,l.get(k-2)+1);
 //         }
-//         else if(k>0){
-//             l.add(l.get(k-1)+1);
-//             l.add(l.get(k)+1);
-//             l.remove(k-1);
-//             l.remove(k);
+//         else {
+//             l.set(0,l.get(0)+1);
 //         }
 //         Collections.sort(l);
 //         count++;
